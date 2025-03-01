@@ -4,7 +4,7 @@ final activeColor = Color.fromRGBO(0, 0, 0, 1);
 final bgColor = Color.fromRGBO(229, 231, 235, 1);
 final disabledColor = Color.fromRGBO(153, 161, 175, 1);
 
-final searchColor = Color.fromRGBO(229, 231, 235, 1);
+final activeSearchColor = Color.fromRGBO(16, 24, 40, 1);
 final highlightColor = Color.fromRGBO(217, 119, 6, 0.16);
 
 final blueColor = Color.fromRGBO(20, 71, 230, 1);

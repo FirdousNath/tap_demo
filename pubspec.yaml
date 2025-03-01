@@ -13,9 +13,11 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   flutter_bloc: ^9.0.0
+  flutter_svg: ^2.0.17
   injectable: ^2.5.0
   get_it: ^8.0.3
   freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
 
 dev_dependencies:
   flutter_test:
@@ -25,12 +27,15 @@ dev_dependencies:
   freezed: ^3.0.2
   build_runner: ^2.4.15
   injectable_generator: ^2.7.0
+  json_serializable: ^6.9.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
   fonts:
     - family: Inter
       fonts:
-        - asset: fonts/Inter-Regular.ttf
-        - asset: fonts/InterVariable.ttf
-        - asset: fonts/InterVariable-Italic.ttf
+        - asset: assets/fonts/Inter.ttc
+        - asset: assets/fonts/InterVariable.ttf
+        - asset: assets/fonts/InterVariable-Italic.ttf

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tap_demo/app/injection.dart';
+import 'package:tap_demo/app/routes.dart';
+import 'package:tap_demo/features/bond_details/presentation/bonds_details_screen.dart';
+import 'package:tap_demo/features/bonds_listing/presentation/bonds_listing_screen.dart';
 
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 
@@ -11,12 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        fontFamily: 'Inter',
-      ),
-      home: const Text('Home'),
+      theme: ThemeData(fontFamily: 'Inter'),
+      routes: {
+        AppRoutes.home: (context) => BondsListingScreen(),
+        AppRoutes.bondDetails: (context) => BondsDetailsScreen(),
+      },
     );
   }
 }

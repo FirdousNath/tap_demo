@@ -11,3 +11,10 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+
+# For iOS build
+**/Pods/
+
+# For Android build 
+**/build/
+**/app/.cxx
