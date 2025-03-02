@@ -30,7 +30,7 @@ class AppSearchBar extends StatelessWidget {
             child: TextField(
               onChanged: onChanged,
               decoration: InputDecoration(
-                hintText: 'Search',
+                hintText: 'Search by Issuer Name or ISIN',
                 border: InputBorder.none,
                 hintStyle: AppTextStyles.searchText,
               ),

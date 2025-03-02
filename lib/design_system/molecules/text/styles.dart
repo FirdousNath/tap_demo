@@ -17,6 +17,13 @@ class AppTextStyles {
     fontFamily: 'Inter',
   );
 
+  static TextStyle get titleSemiBold => TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: activeColor,
+    fontFamily: 'Inter',
+  );
+
   static TextStyle get description => TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w400,

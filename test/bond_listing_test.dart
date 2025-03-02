@@ -28,7 +28,7 @@ void main() {
         await iSeeWidget(tester, CircularProgressIndicator);
         await iWait(tester);
         await iSeeText(tester, 'Home');
-        await iSeeText(tester, 'Search');
+        await iSeeText(tester, 'Search by Issuer Name or ISIN');
         await iSeeText(tester, 'SUGGESTED RESULTS');
         await iSeeWidget(tester, BondsListView);
         await iDontSeeWidget(tester, CircularProgressIndicator);

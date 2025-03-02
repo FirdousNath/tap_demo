@@ -9,7 +9,7 @@ Feature: Bond Listing Screen
     Then I see {CircularProgressIndicator} widget
     When I wait
     Then I see {'Home'} text
-    And I see {'Search'} text
+    And I see {'Search by Issuer Name or ISIN'} text
     And I see {'SUGGESTED RESULTS'} text
     Then I see {BondsListView} widget
     And I dont see {CircularProgressIndicator} widget

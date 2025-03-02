@@ -50,7 +50,7 @@ class IssuerDetails extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       color: bgColor,
-                      borderRadius: smallBorderRadius,
+                      borderRadius: mediumBorderRadius,
                     ),
                     padding: EdgeInsets.symmetric(
                       horizontal: micro,
@@ -147,7 +147,7 @@ class IssuerDetails extends StatelessWidget {
                   children: [
                     SvgPicture.asset('assets/images/contacts.svg'),
                     const SizedBox(width: nano),
-                    Text('Issuer Details', style: AppTextStyles.titleMedium),
+                    Text('Issuer Details', style: AppTextStyles.titleSemiBold),
                   ],
                 ),
               ),
@@ -160,7 +160,7 @@ class IssuerDetails extends StatelessWidget {
                   children: [
                     Text(
                       "Issuer name",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -174,7 +174,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Type of Issuer",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -188,7 +188,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Sector",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -202,7 +202,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Industry",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -216,7 +216,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Issuer nature",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -230,7 +230,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Corporate Identity Number (CIN)",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -244,7 +244,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Name of the Lead Manager",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -258,7 +258,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Registrar",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
@@ -272,7 +272,7 @@ class IssuerDetails extends StatelessWidget {
                     const SizedBox(height: xlarge - nano),
                     Text(
                       "Name of Debenture Trustee",
-                      style: AppTextStyles.titleMedium.copyWith(
+                      style: AppTextStyles.titleSemiBold.copyWith(
                         color: blueColor,
                       ),
                     ),
