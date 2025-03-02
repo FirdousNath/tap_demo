@@ -16,6 +16,7 @@ class BondsListView extends StatelessWidget {
       itemCount: bonds.length,
       itemBuilder: (context, index) {
         return GestureDetector(
+          behavior: HitTestBehavior.translucent,
           child: BondsListTile(bond: bonds[index]),
           onTap:
               () => Navigator.of(context).pushNamed(

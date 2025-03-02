@@ -5,13 +5,13 @@ import 'package:tap_demo/features/bonds_listing/presentation/bloc/bond_listing_s
 
 @injectable
 class BondListingCubit extends Cubit<BondListingState> {
-  BondListingCubit(this.repo) : super(BondListingState.initial());
+  BondListingCubit(this._repo) : super(BondListingState.initial());
 
-  final BondsListingRepo repo;
+  final BondsListingRepo _repo;
 
   void fetchBonds() {
     emit(state.copyWith(isLoading: true));
-    repo.getBondsList().then((bonds) {
+    _repo.getBondsList().then((bonds) {
       emit(state.copyWith(isLoading: false, bonds: bonds));
     });
   }
