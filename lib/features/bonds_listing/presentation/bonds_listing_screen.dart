@@ -36,7 +36,10 @@ class BondsListingScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: medium),
                     child: Text(
-                      'SUGGESTED RESULTS',
+                      state.searchQuery != null &&
+                              state.searchQuery!.trim().isNotEmpty
+                          ? "SEARCH RESULTS"
+                          : 'SUGGESTED RESULTS',
                       style: AppTextStyles.bodyBold,
                     ),
                   ),

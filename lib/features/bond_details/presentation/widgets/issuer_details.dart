@@ -173,6 +173,20 @@ class IssuerDetails extends StatelessWidget {
                     ),
                     const SizedBox(height: xlarge - nano),
                     Text(
+                      "Type of Issuer",
+                      style: AppTextStyles.titleMedium.copyWith(
+                        color: blueColor,
+                      ),
+                    ),
+                    const SizedBox(height: tiny - nano),
+                    Text(
+                      bondDetails.issuer.type,
+                      style: AppTextStyles.description.copyWith(
+                        color: activeColor,
+                      ),
+                    ),
+                    const SizedBox(height: xlarge - nano),
+                    Text(
                       "Sector",
                       style: AppTextStyles.titleMedium.copyWith(
                         color: blueColor,
