@@ -6,4 +6,3 @@ const medium = 16.0;
 const large = 24.0;
 const xlarge = 32.0;
 const xxlarge = 48.0;
-const xxxlarge = 64.0;

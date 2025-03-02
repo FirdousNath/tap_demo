@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 final activeColor = Color.fromRGBO(0, 0, 0, 1);
 final bgColor = Color.fromRGBO(229, 231, 235, 1);
+final dividerColor = Color.fromRGBO(163, 163, 163, 1);
 final disabledColor = Color.fromRGBO(153, 161, 175, 1);
+final disabledTabColor = Color.fromRGBO(74, 85, 101, 1);
 
 final activeSearchColor = Color.fromRGBO(16, 24, 40, 1);
 final highlightColor = Color.fromRGBO(217, 119, 6, 0.16);
