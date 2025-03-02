@@ -4,8 +4,9 @@ import 'package:tap_demo/features/bonds_listing/domain/models/bond_model.dart';
 import 'package:tap_demo/features/bonds_listing/presentation/widgets/bonds_list_tile.dart';
 
 class BondsListView extends StatelessWidget {
-  const BondsListView({this.bonds = const [], super.key});
+  const BondsListView({this.bonds = const [], this.query = '', super.key});
   final List<BondModel> bonds;
+  final String query;
   @override
   Widget build(BuildContext context) {
     if (bonds.isEmpty) {
@@ -17,7 +18,7 @@ class BondsListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return GestureDetector(
           behavior: HitTestBehavior.translucent,
-          child: BondsListTile(bond: bonds[index]),
+          child: BondsListTile(bond: bonds[index], query: query),
           onTap:
               () => Navigator.of(context).pushNamed(
                 AppRoutes.bondDetails,

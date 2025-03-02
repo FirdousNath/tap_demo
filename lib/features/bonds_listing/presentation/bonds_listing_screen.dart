@@ -55,7 +55,10 @@ class BondsListingScreen extends StatelessWidget {
                                 borderRadius: tinyBorderRadius,
                                 border: Border.all(color: bgColor, width: 0.5),
                               ),
-                              child: BondsListView(bonds: state.bonds),
+                              child: BondsListView(
+                                bonds: state.bonds,
+                                query: state.searchQuery ?? '',
+                              ),
                             ),
                   ),
                   const SizedBox(height: medium),

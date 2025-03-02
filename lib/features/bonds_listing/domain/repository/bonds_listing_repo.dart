@@ -5,7 +5,7 @@ import 'package:tap_demo/utils/constants.dart';
 @injectable
 class BondsListingRepo {
   Future<List<BondModel>> getBondsList() {
-    return Future.delayed(Duration(seconds: 1), () {
+    return Future.delayed(Duration(milliseconds: 500), () {
       return List.generate(
         bonds.length,
         (index) => BondModel.fromJson(bonds[index]),
